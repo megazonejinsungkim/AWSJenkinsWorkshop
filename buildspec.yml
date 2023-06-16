@@ -3,6 +3,8 @@ version: 0.2
 phases:
   install:
     commands:
+      - cat /etc/*release
+      - uname -a
       - python -m pip install Flask
   build:
     commands:
