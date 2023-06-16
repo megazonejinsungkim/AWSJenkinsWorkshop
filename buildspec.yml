@@ -3,7 +3,8 @@ version: 0.2
 phases:
   install:
     commands:
-        - python -m ensurepip
+        - curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+        - get-pip.py
         - python -m pip install Flask
   build:
     commands:
